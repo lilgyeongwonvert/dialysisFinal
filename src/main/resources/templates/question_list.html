@@ -43,7 +43,7 @@
                        style="background-color: white" placeholder="찾으시는 내용이 있나요?">
                 <!-- 검색창 end-->
             </div>
-<!--            메뉴바 부분 End -->
+            <!--            메뉴바 부분 End -->
             <table class="table">
                 <thead class="table-light">
                 </thead>
@@ -87,20 +87,21 @@
                             </a>
                         </li>
                     </ul>
-<!--                    css 수정 -->
-<!--                    <a th:href="@{/question/create}" class="write-btn"></a>-->
+                    <!--                    css 수정 -->
+                    <!--                    <a th:href="@{/question/create}" class="write-btn"></a>-->
                     <!-- 메뉴바 추가시 위에 버튼 빼고 활성화-->
-<!--                    <div>-->
-                        <a th:href="@{/question/create}" class="write-btn"></a>
-<!--                    </div>-->
+                    <!--                    <div>-->
+                    <!--                        <a th:href="@{/question/create}" class="write-btn"></a>-->
+                    <!--                    </div>-->
                 </div>
-<!--                키워드와 page를 get방식으로 요청-->
+                <!--                키워드와 page를 get방식으로 요청-->
                 <form th:action="@{/question/list}" method="get" id="searchForm">
                     <input type="hidden" id="kw" name="kw" th:value="${kw}">
                     <input type="hidden" id="page" name="page" th:value="${paging.number}">
                 </form>
             </div>
         </div>
+        <a th:href="@{/question/create}" class="write-btn"></a>
     </div>
 </div>
 <script th:src="@{/bootstrap.min.js}"></script>
